@@ -2,8 +2,8 @@
 Contributors: sparkweb
 Tags: youtube, video, oembed, related
 Requires at least: 2.9
-Tested up to: 3.4.2
-Stable tag: 1.0
+Tested up to: 3.5.1
+Stable tag: 1.1
 This is a simple plugin to keep the YouTube oEmbed from showing related videos.
 
 == Description ==
@@ -14,7 +14,7 @@ On activation, the plugin clears the oEmbed cache so that the videos can be succ
 
 == Installation ==
 
-Copy the folder to your WordPress 
+Copy the folder to your WordPress
 '*/wp-content/plugins/*' folder.
 
 1. Activate the plugin in your WordPress admin
@@ -24,5 +24,14 @@ Copy the folder to your WordPress
 
 == Changelog ==
 
+= 1.1 (Feb 11, 2013) =
+* Updated to match YouTube's new URL structure
+
 = 1.0 (Dec 23, 2011) =
 * Initial Release
+
+
+== Upgrade Notice ==
+
+= 1.1 =
+Updated to match YouTube's new URL structure
