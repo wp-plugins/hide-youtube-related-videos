@@ -4,7 +4,7 @@ Plugin Name: Hide YouTube Related Videos
 Plugin URI: http://wordpress.org/extend/plugins/hide-youtube-related-videos/
 Description: This is a simple plugin to keep the YouTube oEmbed from showing related videos.
 Author: SparkWeb Interactive, Inc.
-Version: 1.1
+Version: 1.2
 Author URI: http://www.soapboxdave.com/
 
 **************************************************************************
@@ -30,7 +30,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //The Filter That Does the Work
 add_filter( 'oembed_result', 'hide_youtube_related_videos', 10, 3);
 function hide_youtube_related_videos($data, $url, $args = array()) {
-	$data = preg_replace('/(youtube\.com.*)(\?feature=oembed)(.*)/', '$1?rel=0$3', $data);
+	$data = preg_replace('/(youtube\.com.*)(\?feature=oembed)(.*)/', '$1?' . apply_filters("hyrv_extra_querystring_parameters", "wmode=transparent&amp;") . 'rel=0$3', $data);
 	return $data;
 }
 
