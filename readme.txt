@@ -2,7 +2,7 @@
 Contributors: sparkweb
 Tags: youtube, video, oembed, related
 Requires at least: 2.9
-Tested up to: 3.7
+Tested up to: 3.8.1
 Stable tag: 1.2
 This is a simple plugin to keep the YouTube oEmbed from showing related videos.
 
