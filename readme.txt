@@ -3,7 +3,7 @@ Contributors: sparkweb
 Tags: youtube, video, oembed, related
 Requires at least: 2.9
 Tested up to: 3.8.1
-Stable tag: 1.2
+Stable tag: 1.3
 This is a simple plugin to keep the YouTube oEmbed from showing related videos.
 
 == Description ==
@@ -42,6 +42,9 @@ function my_hyrv_extra_querystring_parameters($str) {
 
 == Changelog ==
 
+= 1.3 (Feb 10, 2014) =
+Disabled Jetpack YouTube shortcode embed as it kills this feature
+
 = 1.2 (Feb 21, 2013) =
 Added wmode=transparent to the url structure
 
@@ -54,5 +57,5 @@ Added wmode=transparent to the url structure
 
 == Upgrade Notice ==
 
-= 1.2 =
-Added wmode=transparent to the embedded url
+= 1.3 =
+Disabled Jetpack YouTube shortcode embed as it kills this feature
