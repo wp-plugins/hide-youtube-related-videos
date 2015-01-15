@@ -39,6 +39,8 @@ function my_hyrv_extra_querystring_parameters($str) {
 	return "";
 }`
 
+Be sure to leave an &amp; at the end of your string. After installing your filter, be sure to deactivate and reactivate the plugin.
+
 
 == Changelog ==
 
